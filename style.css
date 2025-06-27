@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('backgroundPlants.avif'); /* Фоново изображение */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 650px;
+    text-align: center; 
+}
+
+.logo {
+    max-width: 150px; 
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #006400; 
+    border-bottom: 2px solid #006400;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+.sensor-data p, .controls p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: left;
+    display: flex; /* За подравняване на иконката и текста */
+    align-items: center; /* Вертикално подравняване */
+}
+
+/* Стил за основните иконки до надписите */
+.sensor-data p i.main-icon {
+    color: #555; /* Цвят на основните иконки */
+    margin-right: 8px; /* Разстояние от текста */
+    font-size: 1.1em; /* Малко по-големи иконки */
+    width: 20px; /* Фиксирана ширина за по-добро подравняване */
+    text-align: center;
+}
+
+.sensor-data span, .controls span#pumpStatus {
+    font-weight: bold;
+}
+
+#temperature, #humidity, #lightIntensity, #soilMoisture, #waterLevel{
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Икони за температурни предупреждения (снежинка и огън) */
+#tempIcon.fa-snowflake {
+    color: #3498db; 
+    margin-left: 5px;
+}
+#tempIcon.fa-fire-alt, #tempIcon.fa-fire { 
+    color: #e74c3c; 
+    margin-left: 5px;
+}
+
+.warning-message {
+    font-style: italic;
+    color: #d35400; 
+    font-size: 0.9em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 28px; /* За да се подравни с текста над него, ако има иконка */
+}
